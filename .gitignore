@@ -101,3 +101,7 @@ ENV/
 .mypy_cache/
 
 .vscode*
+
+data/*
+features/*
+models/*
