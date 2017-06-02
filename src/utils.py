@@ -22,12 +22,9 @@ def shuffle_assigned_noises(noises):
     shuffles all of the noises assigned to images
     done evety N epoch to avoid plateaus
     '''
-    new_noises = {}
     keys = noises.keys()
     values = list(noises.values())
     np.random.shuffle(values)
 
     for k, v in zip(keys, values):
-        new_noises[k] = v
-
-    return new_noises
+        noises[k] = v
